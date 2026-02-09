@@ -304,42 +304,37 @@ Hello My Name is SpectraNoise, I am an Automated Bot That Works To Help
 - $
  ! ls
 `;
-await Ril.sendMessage(m.chat, {
-  productMessage: {
-    title: "#-2025 ( RilzX7 )",
-    description: "X",
-    thumbnail: { url: "https://img1.pixhost.to/images/7640/627635809_biyu-offc.jpg" },
-    productId: "123456789",
-    retailerId: "TOKOKU",
-    body: all,
-    footer: "© RilzX7",
-    buttons: [
-      {
-        name: "single_select",
-        buttonParamsJson: JSON.stringify({
-          title: "SpecX7",
-          sections: [
-            {
-              title: "#RilzX7",
-              rows: [
-                { header: "RilzX7", title: "X", id: "x" },
-                { header: "RilzX7", title: "X", id: "x" }
-              ]
-            }
-          ]
-        })
-      },
-      {
-        name: "cta_url",
-        buttonParamsJson: JSON.stringify({
-          display_text: "#R7",
-          url: "https://t.me/Rilyzyishere",
-          merchant_url: "https://t.me/Rilyzyishere"
-        })
-      }
-    ]
-  }
-}, { quoted: zets })
+await Ril.sendMessage(
+  m.chat,
+  {
+    productMessage: {
+      title: "I also do not know!",
+      description: "hmm?",
+      thumbnail: { url: "https://github.com/RILLYZY.png" },
+      productId: "Tsx011",
+      retailerId: "RETAIL001",
+      url: "https://rilzx7.zone.id",
+      body: all,
+      footer: "› ©TsxDex!!",
+      priceAmount1000: 10000000000000,
+      currencyCode: "USD",
+      buttons: [
+        {
+          name: "cta_url",
+          buttonParamsJson: JSON.stringify({
+            display_text: " ",
+            url: "https://t.me/TsxDex",
+            landing_page_url: "https://t.me/TsxDex",
+            webview_interaction: true,
+            payment_link_preview: false,
+            webview_presentation: null
+          })
+        }
+      ]
+    }
+  },
+  { quoted: m }
+)
 break 
 }
 
